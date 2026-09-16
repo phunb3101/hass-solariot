@@ -1,0 +1,21 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Solariot",
+        "description": "Paste the API key you created in your account settings on {server}.",
+        "data": {
+          "api_key": "API key"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "The API key is invalid, revoked, or expired.",
+      "cannot_connect": "Could not reach the server. {error}",
+      "no_devices": "The key is valid, but this account has no devices yet. Add a gateway on the portal first."
+    },
+    "abort": {
+      "already_configured": "This account is already set up."
+    }
+  }
+}

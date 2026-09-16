@@ -1,0 +1,33 @@
+name: Validate
+
+# The two checks HACS runs before it will list a repository. Running them here
+# means a rejection shows up as a red tick on our own commit, rather than as a
+# reviewer's comment weeks into a submission queue.
+on:
+  push:
+  pull_request:
+  schedule:
+    # HACS and hassfest both tighten their rules over time, so a repo that
+    # passed on the day it was submitted can stop passing without anyone
+    # touching it. Nightly is how that gets noticed.
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  hassfest:
+    name: hassfest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: home-assistant/actions/hassfest@master
+
+  hacs:
+    name: HACS
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hacs/action@main
+        with:
+          category: integration
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

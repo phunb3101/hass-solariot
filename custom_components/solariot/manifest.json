@@ -1,0 +1,12 @@
+{
+  "domain": "solariot",
+  "name": "Solariot",
+  "codeowners": ["@phunb3101"],
+  "config_flow": true,
+  "documentation": "https://github.com/phunb3101/hass-solariot",
+  "integration_type": "hub",
+  "iot_class": "cloud_push",
+  "issue_tracker": "https://github.com/phunb3101/hass-solariot/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

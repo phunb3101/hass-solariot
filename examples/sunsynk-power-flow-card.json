@@ -1,0 +1,77 @@
+{
+  "type": "custom:sunsynk-power-flow-card",
+  "cardstyle": "full",
+  "show_solar": true,
+  "show_battery": true,
+  "show_grid": true,
+  "large_font": true,
+  "dynamic_line_width": true,
+  "card_height": "430px",
+  "inverter": {
+    "model": "lux",
+    "modern": true,
+    "autarky": "power",
+    "auto_scale": true,
+    "three_phase": false
+  },
+  "load": {
+    "show_daily": true,
+    "dynamic_colour": true,
+    "auto_scale": true,
+    "essential_name": "2604143121"
+  },
+  "entities": {
+    "inverter_status_59": "sensor.2604143121_inverter_state_code",
+    "inverter_power_175": "sensor.2604143121_inverter_power",
+    "inverter_voltage_154": "sensor.2604143121_grid_voltage",
+    "grid_voltage": "sensor.2604143121_grid_voltage",
+    "load_frequency_192": "sensor.2604143121_grid_frequency",
+    "battery_voltage_183": "sensor.2604143121_battery_voltage",
+    "battery_soc_184": "sensor.2604143121_battery_soc",
+    "battery_power_190": "sensor.2604143121_battery_power",
+    "battery_current_191": "sensor.2604143121_battery_current",
+    "battery_temp_182": "sensor.2604143121_battery_temperature",
+    "grid_power_169": "sensor.2604143121_grid_power",
+    "grid_ct_power_172": "sensor.2604143121_grid_power",
+    "essential_power": "sensor.2604143121_load_power",
+    "pv_total": "sensor.2604143121_pv_power",
+    "pv1_power_186": "sensor.2604143121_pv1_power",
+    "pv2_power_187": "sensor.2604143121_pv2_power",
+    "pv1_voltage_109": "sensor.2604143121_pv1_voltage",
+    "pv2_voltage_111": "sensor.2604143121_pv2_voltage",
+    "day_pv_energy_108": "sensor.2604143121_pv_energy_today",
+    "day_load_energy_84": "sensor.2604143121_load_energy_today",
+    "day_grid_import_76": "sensor.2604143121_grid_import_today",
+    "day_grid_export_77": "sensor.2604143121_grid_export_today",
+    "day_battery_charge_70": "sensor.2604143121_battery_charged_today",
+    "day_battery_discharge_71": "sensor.2604143121_battery_discharged_today",
+    "total_pv_generation": "sensor.2604143121_pv_energy_total",
+    "radiator_temp_91": "sensor.2604143121_radiator_temperature"
+  },
+  "battery": {
+    "energy": 10240,
+    "shutdown_soc": 15,
+    "show_daily": true,
+    "invert_power": false,
+    "dynamic_colour": true,
+    "auto_scale": true,
+    "animate": true
+  },
+  "solar": {
+    "show_daily": true,
+    "mppts": 2,
+    "max_power": 6000,
+    "display_mode": 1,
+    "pv1_name": "PV1",
+    "pv2_name": "PV2",
+    "auto_scale": true
+  },
+  "grid": {
+    "show_daily_buy": true,
+    "show_daily_sell": true,
+    "invert_grid": false,
+    "auto_scale": true,
+    "grid_name": "Lưới",
+    "show_nonessential": false
+  }
+}

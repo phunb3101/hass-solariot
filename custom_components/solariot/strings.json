@@ -1,0 +1,21 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Solariot",
+        "description": "Dán khoá API bạn tạo trong phần Cài đặt tài khoản trên {server}.",
+        "data": {
+          "api_key": "Khoá API"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Khoá API không hợp lệ, đã bị thu hồi hoặc đã hết hạn.",
+      "cannot_connect": "Không kết nối được tới máy chủ. {error}",
+      "no_devices": "Khoá hợp lệ, nhưng tài khoản này chưa có thiết bị nào. Hãy thêm gateway trên portal trước."
+    },
+    "abort": {
+      "already_configured": "Tài khoản này đã được thêm rồi."
+    }
+  }
+}
